@@ -5,6 +5,7 @@ import { nitro } from 'nitro/vite'; // Import nitro
 import path from "path";
 
 export default defineConfig({
+  base: "/",
   plugins: [
     tanstackStart({
       prerender: {

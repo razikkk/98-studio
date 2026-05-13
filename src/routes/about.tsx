@@ -49,7 +49,7 @@ function AboutPage() {
     <div className="md:col-span-8">
       <Reveal>
         <p className="text-balance text-2xl font-normal leading-snug text-black sm:text-3xl md:text-4xl">
-          98-Studio is a boutique engineering team based in <span className="font-semibold">Kerala, India</span>. We specialize in custom Full-Stack Development, E-commerce, and high-performance Static sites.
+          98 Studio is a boutique engineering team based in <span className="font-semibold">Kerala, India</span>. We specialize in custom Full-Stack Development, E-commerce, and high-performance Static sites.
         </p>
         <p className="mt-8 max-w-2xl text-lg text-black/60 text-pretty leading-relaxed">
           We are platform-agnostic, choosing the best-in-class technology for your specific needs. Whether we are building a bespoke web application or a global SEO strategy, every line of code is written with a single goal: to turn your digital presence into a measurable business asset.

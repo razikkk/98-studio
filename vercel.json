@@ -1,4 +1,11 @@
 {
     "version": 2,
-    "framework": "nitro"
+    "framework": null,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": { "distDir": ".output/public" }
+      }
+    ]
   }

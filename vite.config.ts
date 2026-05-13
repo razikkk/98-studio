@@ -1,24 +1,14 @@
-import { tanstackStart } from '@tanstack/react-start/plugin/vite';
 import { defineConfig } from 'vite';
-import viteReact from '@vitejs/plugin-react';
-import { nitro } from 'nitro/vite'; // Import nitro
-import path from "path";
+import react from '@vitejs/plugin-react';
+import { tanstackStart } from '@tanstack/react-start/plugin/vite';
+import tailwindcss from '@tailwindcss/vite'; // Ensure this is imported
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  base: "/",
   plugins: [
-    tanstackStart({
-      prerender: {
-        enabled: true, // This creates static HTML for SEO
-        crawlLinks: true, 
-      }
-    }),
-    nitro(), // Add nitro here
-    viteReact()
+    tsconfigPaths(),
+    tailwindcss(), // Tailwind must be before react/tanstack plugins
+    tanstackStart(),
+    react(),
   ],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
 });

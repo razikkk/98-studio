@@ -1,14 +1,18 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 import { tanstackStart } from '@tanstack/react-start/plugin/vite';
-import tailwindcss from '@tailwindcss/vite'; // Ensure this is imported
+import tailwindcss from '@tailwindcss/vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import react from '@vitejs/plugin-react'; // 1. Add this import
 
 export default defineConfig({
   plugins: [
     tsconfigPaths(),
-    tailwindcss(), // Tailwind must be before react/tanstack plugins
+    tailwindcss(),
     tanstackStart(),
-    react(),
+    react(), // 2. Add this to the plugins array
   ],
+  // Keep this for Vercel
+  server: {
+    preset: 'vercel',
+  },
 });

@@ -36,7 +36,7 @@ export function Nav() {
             className="flex items-center gap-2 font-semibold tracking-tight"
             aria-label={`${site.brand.name} — home`}
           >
-               <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-[#e26215] to-black text-white text-xs font-bold transition-all duration-500 hover:rotate-12 hover:shadow-[0_0_15px_rgba(226,98,21,0.4)]">
+              <span className="grid h-9 w-9 place-items-center rounded-full bg-linear-to-br from-[#e26215] to-black text-white text-xs font-bold transition-all duration-500 hover:rotate-12 hover:shadow-[0_0_15px_rgba(226,98,21,0.4)]">
   {site.brand.mark}
 </span>
             <span className="hidden sm:inline text-sm">{site.brand.name}</span>

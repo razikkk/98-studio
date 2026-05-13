@@ -8,7 +8,9 @@ import path from "path";
 export default defineConfig({
   plugins: [
     tanstackStart(),
-    nitro(), // No deployment property here anymore
+    nitro({
+      preset: 'vercel' // Explicitly tells Nitro to build for Vercel
+    }), // No deployment property here anymore
     tailwindcss(),
     react(),
   ],

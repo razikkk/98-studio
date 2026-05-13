@@ -11,7 +11,7 @@ export const Route = createFileRoute("/works")({
   head: () => ({
     meta: [
       { title: "Work — 98 Studio" },
-      { name: "description", content: "Selected websites and SEO case studies from 98 Studio." },
+      { name: "description", content: "Selected Websites and SEO case studies from 98 Studio." },
       { property: "og:title", content: "Work — 98 Studio" },
       { property: "og:description", content: "Selected websites and SEO case studies." },
     ],

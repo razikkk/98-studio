@@ -10,7 +10,7 @@ export function Footer() {
           {/* Brand & SEO Tagline */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-[#e26215] to-black text-white text-xs font-bold transition-all duration-500 hover:rotate-12 hover:shadow-[0_0_15px_rgba(226,98,21,0.4)]">
+            <span className="grid h-9 w-9 place-items-center rounded-full bg-linear-to-br from-[#e26215] to-black text-white text-xs font-bold transition-all duration-500 hover:rotate-12 hover:shadow-[0_0_15px_rgba(226,98,21,0.4)]">
   {site.brand.mark}
 </span>
               <span className="font-bold tracking-tighter text-xl uppercase">{site.brand.name}</span>

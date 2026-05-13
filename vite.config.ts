@@ -1,12 +1,14 @@
 import { defineConfig } from 'vite';
 import { tanstackStart } from '@tanstack/react-start/plugin/vite';
+import { nitro } from 'nitro/vite' // Add this
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from "path";
 
 export default defineConfig({
   plugins: [
-    tanstackStart(), // No deployment property here anymore
+    tanstackStart(),
+    nitro(), // No deployment property here anymore
     tailwindcss(),
     react(),
   ],
